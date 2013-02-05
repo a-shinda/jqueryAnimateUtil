@@ -12,7 +12,7 @@
 
         // config
         var config = jQuery.extend({
-            action: "FlipLeft"
+            action: "FlipRight"
             , angle: 360
             , speed: 0.5
             , tranTimFunc: "ease"
@@ -27,7 +27,7 @@
             (config.funcStart)();
 
             // Change Css
-            Flip($(this), "rotateY", "");
+            Flip($(this), "rotateY", "-");
 
         } else if (config.action == "FlipRight") {
 
@@ -35,7 +35,7 @@
             (config.funcStart)();
 
             // Change Css
-            Flip($(this), "rotateY", "-");
+            Flip($(this), "rotateY", "");
 
         } else if (config.action == "FlipTop") {
 
